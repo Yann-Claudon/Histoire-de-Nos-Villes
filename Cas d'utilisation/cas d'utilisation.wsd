@@ -1,0 +1,18 @@
+@startuml Histoire de nos villes
+left to right direction
+actor Utilisateur as g
+actor Support as s
+
+rectangle "Histoire de nos villes" {
+  usecase "Etre notifié" as UC1
+  (UC1).>(Gérer notification) : include
+  usecase "Etre géolocalisé" as UC2
+  usecase "Remplir les informations historiques" as UC3
+
+}
+
+g --> UC1
+g --> UC2
+s --> UC3
+
+@enduml
