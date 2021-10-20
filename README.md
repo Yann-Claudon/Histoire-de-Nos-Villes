@@ -1,2 +1,2 @@
-# Histoire-de-Nos-Villes
-Application pour redynamiser le tourisme des villes
+# Histoire de nos villes
+Application pour redynamiser le tourisme local
