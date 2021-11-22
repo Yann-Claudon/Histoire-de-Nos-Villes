@@ -1,6 +1,36 @@
-@startuml
+@startuml Histoire_de_nos_villes
+start
+split
+partition #lightGreen "Developpeur" {
+:Sortie de l'application;
+:Mise à jour des points d'interets;
+}
 
-(*) --> "First Action"
-"First Action" --> (*)
+split again
+
+partition #YellowGreen "Utilisateur"{
+
+:Application installée;
+    while (Notification activées) is (oui)
+        
+        if ("Passage à proximité d'un point d'intéret") then (oui)
+            :Reception notification;
+        else (non)
+
+        endif
+    endwhile
+
+ 
+     :lol;
+  
+}
+split again
+partition #IndianRed "Collectivité"{
+:Achat de la solution "clé en main";
+}
+end split
+stop
 
 @enduml
+
+
