@@ -1,0 +1,31 @@
+@startuml Histoire_de_nos_villes
+|#LightGrey|Developpeur|
+
+start
+
+:Developpement
+de l'application;
+
+|#AntiqueWhite|Collectivite|
+:Achat de la solution;
+:Mise à disposition
+des informations;
+
+|Developpeur|
+:Intégration les 
+points d'intérets;
+
+|Collectivite|
+:Validation;
+
+|#IndianRed|Utilisateur|
+:Installation de l'application;
+:Découverte de la ville
+grâce à l'application;
+
+stop
+@enduml
+
+
+
+

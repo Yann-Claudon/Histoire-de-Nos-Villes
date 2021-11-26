@@ -1,0 +1,26 @@
+@startuml Histoire_de_nos_villes
+
+start
+
+:Installation de l'application;
+:Application installée;
+if (Autorisation de la géolocalisation) then (oui)
+    while (Notification activées) is (oui)
+        
+        if ("Passage à proximité d'un point d'intéret") then (oui)
+            :Reception notification;
+        else (non)
+
+        endif
+    endwhile
+ else (non)
+endif
+
+:Possibilité d'itinéraire;
+
+stop
+@enduml
+
+
+
+
