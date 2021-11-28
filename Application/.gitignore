@@ -60,4 +60,4 @@ buck-out/
 /ios/Pods/
 ./node_modules
 
-./android/gradle.properties
+./android/.gradle/gradle.properties
