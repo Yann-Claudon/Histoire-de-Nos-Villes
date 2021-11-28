@@ -59,5 +59,3 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 ./node_modules
-
-./android/.gradle/gradle.properties
