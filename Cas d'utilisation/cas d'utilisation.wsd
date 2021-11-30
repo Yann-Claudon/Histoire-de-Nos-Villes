@@ -1,18 +1,20 @@
 @startuml Histoire de nos villes
 left to right direction
-actor Utilisateur as g
+actor Utilisateur as u
 actor Support as s
+actor Client as c
 
 rectangle "Histoire de nos villes" {
-  usecase "Etre notifié" as UC1
-  (UC1).>(Gérer notification) : include
-  usecase "Etre géolocalisé" as UC2
-  usecase "Remplir les informations historiques" as UC3
-
+  (UC1).>(Etre notifié des points d'interets)
+  usecase "Découvrir une ville" as UC1
+  (UC1).>(Etre geolocalisé)
+  usecase "Remplir les informations historiques" as UC4
+  usecase "Acheter la solution" as UC5
+  (UC5).>(Donner les informations des points d'interets)
 }
 
-g --> UC1
-g --> UC2
-s --> UC3
+u --> UC1
+s --> UC4
+c --> UC5
 
 @enduml

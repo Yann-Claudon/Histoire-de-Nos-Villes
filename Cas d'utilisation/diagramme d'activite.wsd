@@ -20,8 +20,6 @@ partition #YellowGreen "Utilisateur"{
         endif
     endwhile
 
- 
-     :lol;
   
 }
 split again
