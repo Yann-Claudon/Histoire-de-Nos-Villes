@@ -136,7 +136,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        
+        multiDexEnabled true
     }
     splits {
         abi {
@@ -218,7 +218,7 @@ dependencies {
     }
     implementation project(":react-native-gesture-handler")
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    //implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"
     compile project(':mapbox-react-native-mapbox-gl')
 }
