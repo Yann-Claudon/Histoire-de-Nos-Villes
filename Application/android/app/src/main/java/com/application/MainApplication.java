@@ -31,6 +31,7 @@ public class MainApplication extends Application implements ReactApplication {
           packages.add(new MapsPackage());
           packages.add(new VectorIconsPackage());
           packages.add(new RNGestureHandlerPackage());
+          packages.add(new RCTMGLPackage());
           return packages;
         }
 
