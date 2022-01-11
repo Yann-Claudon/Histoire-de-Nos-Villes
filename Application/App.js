@@ -8,6 +8,9 @@
 
 import React from 'react';
 import type {Node} from 'react';
+import { View, StyleSheet, Text,  Image } from "react-native";
+import MapboxGL from "@react-native-mapbox-gl/maps";
+
 import {
   SafeAreaView,
   ScrollView,
