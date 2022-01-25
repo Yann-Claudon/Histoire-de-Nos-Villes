@@ -64,7 +64,5 @@ allprojects {
             }
         }
         google()
-        
-        
     }
 }
