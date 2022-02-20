@@ -14,10 +14,11 @@ const styles = StyleSheet.create({
   container: {
     height: "100%",
     width: "100%",
-    backgroundColor: "tomato"
+
   },
   map: {
     flex: 1
+    
   }
 });
 
@@ -30,7 +31,7 @@ export default class App extends Component {
     return (
       <View style={styles.page}>
         <View style={styles.container}>
-          <MapboxGL.MapView style={styles.map} />
+          <MapboxGL.MapView style={styles.map} centerCoordinate={this.state.coordinates[0]} showUserLocation={true} userTrackingMode={this.state.userSelectedUserTrackingMode}/>
         </View>
       </View>
     );
