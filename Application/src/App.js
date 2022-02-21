@@ -14,11 +14,9 @@ const styles = StyleSheet.create({
   container: {
     height: "100%",
     width: "100%",
-
   },
   map: {
-    flex: 1
-    
+    flex: 1,
   }
 });
 
@@ -31,7 +29,7 @@ export default class App extends Component {
     return (
       <View style={styles.page}>
         <View style={styles.container}>
-          <MapboxGL.MapView style={styles.map} centerCoordinate={this.state.coordinates[0]} showUserLocation={true} userTrackingMode={this.state.userSelectedUserTrackingMode}/>
+          <MapboxGL.MapView style={styles.map} styleURL="mapbox://styles/projetville/ckysfg35o0wyx14mikay588x3" /*centerCoordinate={this.state.coordinates[0]} showUserLocation={true} userTrackingMode={this.state.userSelectedUserTrackingMode}*//>
         </View>
       </View>
     );
