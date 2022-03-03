@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Text, Button} from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-
-import Carte from "./Carte";
-
-
-const Stack = createStackNavigator();
+import { View, Text, Button} from "react-native";
 
 export default class Accueil extends Component {
 
@@ -16,17 +9,16 @@ export default class Accueil extends Component {
                 <View>
                     <Text>En autonomie</Text>
                     <Text>Découvrez plus de 150 villes partenaires et voyagez à travers l'histoire</Text>
-                    <Button title="Carte" onPress={() => this.props.navigation.navigate("Carte") }></Button>
-                        <Stack.Navigator>
-                            <Stack.Screen name="Carte" component={Carte} />
-                        </Stack.Navigator>
+                   
+                    <Button title="Carte Autonomie" onPress={() => this.props.navigation.push("Carte")}/>
                     
                 </View>
                 <View>
                     <Text>Vos parcours</Text>
                     <Text>Découvrez plus de 3 parcours différents pour chaque villes</Text>
+                    <Button title="Carte Parcours" onPress={() => this.props.navigation.push("Carte")}/>
                 </View>
             </View>
         );
     }
-}
+} 
