@@ -19,8 +19,8 @@ const Stack = createStackNavigator();
 const Map = () => {
   return(
     <Stack.Navigator>
-        <Stack.Screen name="Accueil" component={Accueil} />
-        <Stack.Screen name="Carte" component={Carte} />
+        <Stack.Screen name="Accueil" component={Accueil} options={{ headerShown: false }} />
+        <Stack.Screen name="Carte" component={Carte} options={{ headerShown: false }}/>
     </Stack.Navigator>
   )
 };
