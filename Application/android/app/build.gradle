@@ -191,7 +191,7 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
-     implementation project(':react-native-mapbox-gl')
+    implementation project(':react-native-mapbox-gl')
     implementation project(':react-native-gesture-handler')
 
     implementation "com.android.support:appcompat-v7:31.0.0"

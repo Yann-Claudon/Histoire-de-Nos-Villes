@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { View, Text, Button } from "react-native";
 import Style from "../Style";
-
+import Haut from "./Haut";
 export default class Filtre extends Component {
     render() {
         return (
             <View>
-                <Text style={Style.typoTitre}>Filtres</Text>
+                <Haut></Haut>
+                <Text style={Style.typoTitre}>Choisissez vos époques et validez : </Text>
+                <Button style={Style.button} color="#F29718" title="GO !" onPress={() => this.props.navigation.push("Carte")}/>
             </View>
         );
     }

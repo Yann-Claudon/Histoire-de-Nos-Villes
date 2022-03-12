@@ -1,9 +1,6 @@
 import { StyleSheet} from "react-native";
 
 export default StyleSheet.create({
-    background: {
-        backgroundColor: '#f5f',
-    },
     typoTitre: {
         textAlign: 'center',
         fontFamily: 'Arial',
@@ -23,4 +20,10 @@ export default StyleSheet.create({
         margin: 10,
         padding: 10,
     },
+    header: {
+        backgroundColor: '#D48832',
+        padding: 10,
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20,
+    }
 });
