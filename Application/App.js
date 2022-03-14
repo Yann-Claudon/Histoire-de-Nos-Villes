@@ -21,9 +21,18 @@ const Stack = createStackNavigator();
 
 const Map = () => {
   return(
-    <Stack.Navigator>
-        <Stack.Screen name="Accueil" component={Accueil} options={{ headerShown: false }} />
-        <Stack.Screen name="Carte" component={Carte} options={{ headerShown: false }}/>
+    <Stack.Navigator screenOptions={ {headerShown: false} }>
+        <Stack.Screen name="Accueil" component={Accueil} />
+        <Stack.Screen name="Carte" component={Carte}/>
+    </Stack.Navigator>
+  )
+};
+
+const MapFiltre = () => {
+  return(
+    <Stack.Navigator screenOptions={ {headerShown: false} }>
+        <Stack.Screen name="Filtre" component={Filtre}  />
+        <Stack.Screen name="Carte" component={Carte} />
     </Stack.Navigator>
   )
 };
@@ -35,7 +44,7 @@ export default class App extends Component {
       <NavigationContainer>
       <Tabs.Navigator screenOptions={ {headerShown: false, tabBarShowLabel: false, tabBarInactiveTintColor:"#030202", tabBarActiveTintColor:"#F29718" } }>
         <Tabs.Screen name="Accueil" component={Map} options={{tabBarIcon:({color, size}) => (<Ionicon name="location-sharp" color={color} size={size}/>) }}/>
-        <Tabs.Screen name="Filtres" component={Filtre} options={{tabBarIcon:({color, size}) => (<Ionicon name="filter" color={color} size={size}/>) }}/>
+        <Tabs.Screen name="Filtres" component={MapFiltre} options={{tabBarIcon:({color, size}) => (<Ionicon name="filter" color={color} size={size}/>) }}/>
         <Tabs.Screen name="Actualités" component={Actu} options={{tabBarIcon:({color, size}) => (<Ionicon name="newspaper-outline" color={color} size={size}/>) }}/>
         <Tabs.Screen name="Paramètres" component={Settings} options={{tabBarIcon:({color, size}) => (<Ionicon name="settings-outline" color={color} size={size}/>) }}/>
       </Tabs.Navigator>

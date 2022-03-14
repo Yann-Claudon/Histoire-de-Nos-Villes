@@ -41,6 +41,7 @@ export default class Carte extends Component {
       // affiche la carte avec le style définie dans Mapbox Studio
         <View style={styles.container}>
           <MapboxGL.MapView style={styles.map} styleURL="mapbox://styles/projetville/ckysfg35o0wyx14mikay588x3">
+            <MapboxGL.Camera followUserLocation={true} followUserMode="normal"/>
             <MapboxGL.UserLocation visible={true} showsUserHeadingIndicator={true}/>
           </MapboxGL.MapView>
         </View>
