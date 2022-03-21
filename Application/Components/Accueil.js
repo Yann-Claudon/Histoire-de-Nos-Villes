@@ -18,7 +18,7 @@ export default class Accueil extends Component {
                 <View>
                     <Text style={Style.typoTitre}>Vos parcours</Text>
                     <Text style={Style.typoCorp}>Découvrez plus de 3 parcours différents pour chaque villes</Text>
-                    <Button style={Style.button} color="#F29718" title="Découvrir" onPress={() => this.props.navigation.push("Carte")}/>
+                    <Button style={Style.button} color="#F29718" title="Découvrir" onPress={() => this.props.navigation.push("Parcours")}/>
                 </View>
             </View>
         );
