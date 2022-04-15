@@ -62,3 +62,10 @@ buck-out/
 
 # android
 gradle.properties
+.gradle/executionHistory/
+.gradle/buildOutputCleanup
+.gradle/checksums
+.gradle/fileHashes
+
+
+
