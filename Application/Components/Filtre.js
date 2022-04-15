@@ -77,7 +77,7 @@ export default class Filtre extends Component {
   _renderItem = ({item}) => {
     return (
       <TouchableWithoutFeedback >
-        <View style={styles.container}>
+        <View>
           <ImageBackground
             source={item.image}
             style={{
