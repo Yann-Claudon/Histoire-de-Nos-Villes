@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    
   },
 });
 
@@ -76,7 +76,7 @@ export default class Filtre extends Component {
 
   _renderItem = ({item}) => {
     return (
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback >
         <View>
           <ImageBackground
             source={item.image}
