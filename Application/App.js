@@ -1,18 +1,20 @@
-import 'react-native-gesture-handler';
 import React, { Component } from "react";
+
+// import nécessaire à la navigation
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from '@react-navigation/stack';
 
-// récupération des 4 pages par défaut de l'application
+// récupération des pages par défaut de l'application
 import Accueil from "./Components/Accueil";
 import Filtre from "./Components/Filtre";
 import Actu from "./Components/Actu";
 import Settings from "./Components/Settings";
 import Carte from './Components/Carte';
+import Parcours from './Components/Parcours';
 
 // Icones des onglets
-import Ant from 'react-native-vector-icons/AntDesign';
+
 import Ionicon from 'react-native-vector-icons/Ionicons';
 
 // création de la barre de navigation
@@ -24,6 +26,7 @@ const Map = () => {
     <Stack.Navigator screenOptions={ {headerShown: false} }>
         <Stack.Screen name="Accueil" component={Accueil} />
         <Stack.Screen name="Carte" component={Carte}/>
+        <Stack.Screen name="Parcours" component={Parcours} />
     </Stack.Navigator>
   )
 };
