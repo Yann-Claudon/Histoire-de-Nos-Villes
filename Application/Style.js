@@ -8,6 +8,7 @@ export default StyleSheet.create({
         fontSize: 26,
     },
     typoCorp: {
+        textAlign: 'center',
         fontFamily: 'Arial',
         color: '#030202',
         fontSize: 20,

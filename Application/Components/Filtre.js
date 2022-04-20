@@ -82,8 +82,8 @@ export default class Filtre extends Component {
           <ImageBackground
             source={item.image}
             style={{
-              width: 300,
-              height: 300,
+              width: '100%' ,
+              height: 325,
               borderRadius: 10,
               flexDirection: 'row',
               justifyContent: 'space-around',
@@ -93,7 +93,7 @@ export default class Filtre extends Component {
             <View style={{alignItems:"center"}}>
 
               <Image
-                style={{height: 150, width: 150}}
+                style={{height: 250, width: 250}}
                 source={item.weath_Im}
               />
               <View>
@@ -123,7 +123,7 @@ export default class Filtre extends Component {
             renderItem={this._renderItem}
             sliderWidth={width}
             itemWidth={width - 10}
-            swipeThreshold={100}
+            swipeThreshold={85}
             layoutCardOffset={-12}
             inactiveSlideOpacity={0.4}
             containerCustomStyle={{
