@@ -43,6 +43,11 @@ const styles = StyleSheet.create({
 
 const Images = [
   {
+    image: require('../Assets/card4.png'),
+    weath_Im:require('../Assets/prehistoire.png'),
+    Time:"Prehistoire",
+  },
+  {
     image: require('../Assets/card1.png'),
     weath_Im:require('../Assets/gladiateur.png'),
     Time:"Moyen-Age",
@@ -57,11 +62,7 @@ const Images = [
     weath_Im:require('../Assets/soldat.png'),
     Time:"Ere moderne",
   },
-  {
-    image: require('../Assets/card4.png'),
-    weath_Im:require('../Assets/prehistoire.png'),
-    Time:"Prehistoire",
-  },
+  
 ];
 
 const INITIAL_INDEX = 0;
