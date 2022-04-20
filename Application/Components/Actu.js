@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Text, Button } from "react-native";
+import { View, Text, Button } from "react-native";
 import Style from "../Style";
 import Haut from "./Haut";
 import notifee, {AppRegistry} from '@notifee/react-native';
-import Accueil from "./Accueil";
-import App from "../App";
+
 
 
 
@@ -25,7 +24,7 @@ export default class Actu extends Component {
           body: 'La cathédrale Saint-Cyr-et-Sainte-Julitte de Nevers est une cathédrale catholique romaine qui est dédiée à saint Cyr (Cyricus), martyr en 304 à l’âge de trois ans, et à sa mère sainte Julitte (Julitta) également martyre',
           android: {
             channelId : 'Vibra',
-            largeIcon: require('../assets/owl.png'),
+            largeIcon: require('../Assets/owl.png'),
             pressAction: {
                 id: 'default',  //this.props.navigation.push("Parcours")
               },
@@ -38,7 +37,7 @@ export default class Actu extends Component {
             <View>
                 <Haut></Haut>
                 <Text style={Style.typoTitre}>Actualités</Text>
-                <Button color="#F29718" title="Déclancher notification" onPress={this.onDisplayNotification} />
+                <Button color="#F29718" title="Déclencher notification" onPress={this.onDisplayNotification} />
 
             </View>
         );

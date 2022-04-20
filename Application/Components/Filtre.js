@@ -3,23 +3,16 @@ import {
   View, 
   Text, 
   Dimensions, 
-  TouchableOpacity, 
-  Platform, 
   Button, 
   Image, 
-  ScrollView,
   StyleSheet,
   TouchableWithoutFeedback,
-  Animated,
-  StatusBar,
   ImageBackground } from "react-native";
 import Carousel from 'react-native-snap-carousel';
-import {SimplePaginationDot} from './component';
-
 
 import Style from "../Style";
 import Haut from "./Haut";
-import { isConstructorDeclaration } from "typescript";
+
 
 
 const {width, height} = Dimensions.get('window');
@@ -50,23 +43,23 @@ const styles = StyleSheet.create({
 
 const Images = [
   {
-    image: require('../assets/card1.png'),
-    weath_Im:require('../assets/gladiateur.png'),
+    image: require('../Assets/card1.png'),
+    weath_Im:require('../Assets/gladiateur.png'),
     Time:"Moyen-Age",
   },
   {
-    image: require('../assets/card2.png'),
-    weath_Im:require('../assets/napoleon.png'),
+    image: require('../Assets/card2.png'),
+    weath_Im:require('../Assets/napoleon.png'),
     Time:"Renaissance",
   },
   {
-    image: require('../assets/card3.png'),
-    weath_Im:require('../assets/soldat.png'),
+    image: require('../Assets/card3.png'),
+    weath_Im:require('../Assets/soldat.png'),
     Time:"Ere moderne",
   },
   {
-    image: require('../assets/card4.png'),
-    weath_Im:require('../assets/prehistoire.png'),
+    image: require('../Assets/card4.png'),
+    weath_Im:require('../Assets/prehistoire.png'),
     Time:"Prehistoire",
   },
 ];
