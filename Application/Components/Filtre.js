@@ -43,23 +43,23 @@ const styles = StyleSheet.create({
 
 const Images = [
   {
-    image: require('../Assets/card4.png'),
-    weath_Im:require('../Assets/prehistoire.png'),
+    image: require('../assets/card4.png'),
+    weath_Im:require('../assets/prehistoire.png'),
     Time:"Prehistoire",
   },
   {
-    image: require('../Assets/card1.png'),
-    weath_Im:require('../Assets/gladiateur.png'),
+    image: require('../assets/card1.png'),
+    weath_Im:require('../assets/gladiateur.png'),
     Time:"Moyen-Age",
   },
   {
-    image: require('../Assets/card2.png'),
-    weath_Im:require('../Assets/napoleon.png'),
+    image: require('../assets/card2.png'),
+    weath_Im:require('../assets/napoleon.png'),
     Time:"Renaissance",
   },
   {
-    image: require('../Assets/card3.png'),
-    weath_Im:require('../Assets/soldat.png'),
+    image: require('../assets/card3.png'),
+    weath_Im:require('../assets/soldat.png'),
     Time:"Ere moderne",
   },
   

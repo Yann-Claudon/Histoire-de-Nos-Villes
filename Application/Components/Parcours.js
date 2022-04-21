@@ -16,7 +16,7 @@ export default class Parcours extends Component {
                 <Haut></Haut>
                 <Text style={Style.typoTitre}>Créez votre parcours de découverte </Text>
                 <View>
-                    <Image source={require('../Assets/zonepark.png')} resizeMode="contain" style={{width: '100%', height: '50%'}}/>
+                    <Image source={require('../assets/zonepark.png')} resizeMode="contain" style={{width: '100%', height: '50%'}}/>
                     <Slider style={{width: 350, height: 100}} minimumValue={1} maximumValue={10} minimumTrackTintColor="#F29718" maximumTrackTintColor="#D48832" step={1} onValueChange={(sliderValue) => this.setState({data : sliderValue})} />                                                                                        
                     <Text style={ Style.typoCorp }> Rayon du parcours : {this.state.data} km </Text>
                     <Button style={Style.button} color="#F29718" title="Créez" onPress={() => this.props.navigation.push("Carte")}/>

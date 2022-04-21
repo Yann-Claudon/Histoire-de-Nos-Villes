@@ -24,7 +24,7 @@ export default class Actu extends Component {
           body: 'La cathédrale Saint-Cyr-et-Sainte-Julitte de Nevers est une cathédrale catholique romaine qui est dédiée à saint Cyr (Cyricus), martyr en 304 à l’âge de trois ans, et à sa mère sainte Julitte (Julitta) également martyre',
           android: {
             channelId : 'Vibra',
-            largeIcon: require('../Assets/owl.png'),
+            largeIcon: require('../assets/owl.png'),
             pressAction: {
                 id: 'default',  //this.props.navigation.push("Parcours")
               },
