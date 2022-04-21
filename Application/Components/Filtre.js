@@ -111,12 +111,11 @@ export default class Filtre extends Component {
                 <View>
           <Carousel
             layout={'default'}
-            //ref={carouselRef}
             data={Images}
             renderItem={this._renderItem}
             sliderWidth={width}
             itemWidth={width - 10}
-            swipeThreshold={85}
+            swipeThreshold={80}
             layoutCardOffset={-12}
             inactiveSlideOpacity={0.4}
             containerCustomStyle={{
